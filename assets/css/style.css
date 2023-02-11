@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Zilla+Slab:wght@400;500;600;700&display=swap');
+
+:root {
+    --body-font: 'Nunito', sans-serif;
+    --head-font: 'Zilla Slab', serif;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: var(--body-font);
+}
+.sm-shadow{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.button-full{
+    outline: none;
+    background: #13134b;
+    color: white;
+    padding: 10px 25px;
+    width:156px;
+    border: 1px solid #13134b;
+    transition: 0.5s;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.button-full::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: white;
+    transition: 0.3s linear;
+    z-index: -1;
+}
+.button-full:hover::before{
+    width: 100%;
+    left: 0;
+    color: #13134b
+}
+.button-full:hover{
+    color: #13134b;
+}
+.d-flex-full{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+/* navbar css start  */
+.navbar{
+    padding: 25px 0px;
+    background: rgba(207, 207, 207, 0.111);
+}
+.navbar .navbar-nav .nav-item{
+    margin-left: 20px;
+}
+.navbar .navbar-nav .nav-item a{
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+
+/* hero css start  */
+.hero_section{
+    min-height: 85vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(207, 207, 207, 0.111);
+    align-items: center;
+}
+.hero_section::after{
+    content: '';
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom: -15%;
+    left: -5%;
+    background: #1f7aff1a;
+    border-radius: 50%;
+}
+.hero_section::before{
+    content: '';
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -15%;
+    right: -5%;
+    background: #1f7aff1a;
+    border-radius: 50%;
+}
+
+.hero_section .left_section{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero_section .left_section span.span{
+    color: black;
+    font-size: 28px;
+}
+.hero_section .left_section h1.heading{
+    font-size: 100px;
+    font-family: var(--head-font);
+    color: black;
+}
+.hero_section .left_section p.description{
+    font-size: 16px;
+    width: 75%;
+}
+.hero_section .left_section .arrow{
+    position: absolute;
+    width: 150px;
+    right: -10%;
+    bottom: 10%;
+}
+.hero_section .left_section .color{
+    width: 50px;
+    position: absolute;
+    right: 0px;
+    top: 8%;
+    transform: rotate(90deg);
+}
+.hero_section .right_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_section .right_section .lottie{
+    width: 80%;
+}
