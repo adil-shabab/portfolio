@@ -1,0 +1,39 @@
+
+<svg class="connectionline" width="403" height="439" viewBox="0 0 403 439" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>.connectionline > path {
+	 stroke: #813d8f; 
+	 stroke-opacity: 0.6;
+	 stroke-linecap: round ;
+	 stroke-linejoin: round; 
+	 stroke-dasharray: 1 11; 
+	 stroke-width:2; 
+ }
+
+ .connectionline
+	{
+		left: -53%; 
+	   bottom: -93%;
+	   animation: lineAnimation 5s linear infinite;
+	}
+
+
+
+ @-webkit-keyframes lineAnimation {
+ 0% {
+  stroke-dashoffset:55
+ }
+ to {
+  stroke-dashoffset:0
+ }
+}
+@keyframes lineAnimation {
+ 0% {
+  stroke-dashoffset:55
+ }
+ to {
+  stroke-dashoffset:0
+ }
+}
+</style>	
+<path d="M401.544 1.70154C289.883 1.70154 219.498 121.108 215 216.002C210 321.502 154.837 437.963 1.84888 437.963"></path>
+</svg>

@@ -250,3 +250,50 @@ body{
 .service_section .box a i{
     margin-left: 12px;
 }
+
+
+
+
+
+
+
+
+
+.elastic__section{
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+.elastic__section .head_txt{
+    text-align: center;
+    font-size: 50px;
+    font-family: var(--head-font);
+}
+.elastic__section .head_para{
+    text-align: center;
+    width: 45%;
+    font-synthesis: 16px;
+    color: gray;
+    margin: 0px auto 35px;
+    margin-bottom: 35px;
+}
+.elastic__section  .group {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .elastic__section  .item {
+    width: 18%;
+    height: 75vh;
+    background-position: center;
+    background-size: 75vh;
+    background-repeat: no-repeat;
+    margin: 1%;
+    border-radius: 3vw;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  }
