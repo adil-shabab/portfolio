@@ -297,3 +297,97 @@ body{
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   }
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+.skills_section{
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+.skills_section .head_txt{
+    text-align: center;
+    font-size: 50px;
+    font-family: var(--head-font);
+}
+.skills_section .head_para{
+    text-align: center;
+    width: 45%;
+    font-synthesis: 16px;
+    color: gray;
+    margin: 0px auto 35px;
+    margin-bottom: 35px;
+}
+.skills_section .box{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+}
+
+
+
+
+.footer_section{
+    margin-top: 150px;
+    border-top: 2px solid rgb(220, 220, 220);
+    padding: 80px 0px 10px;
+}
+.footer_section h5{
+    font-family: var(--head-font);
+    font-size: 26px;
+    margin-bottom: 35px;
+}
+.footer_section .logo_section p{
+    color: gray;
+    font-size: 16px;
+}
+.footer_section .logo_section h2{
+    margin-bottom: 35px;
+}
+.footer_section .quick_link{
+    padding: 0px 0px 0px 40px;
+}
+.footer_section .quick_link ul{
+    padding: 0px;
+}
+.footer_section .quick_link ul li a{
+    text-decoration: none;
+    color: black;
+}
+.footer_section .quick_link ul li{
+    margin-bottom: 10px;
+    list-style: none;
+}
+.footer_section .quick_link ul li a i{
+    margin-right: 10px;
+}
+
+
+.footer_section .latest_news img{
+    height: 90%;
+    object-fit: cover;
+}
+.footer_section .latest_news span{
+    font-size: 18px;
+    font-family: var(--head-font);
+    font-weight: bold;
+}
+.footer_section .latest_news p{
+    color: gray;
+    font-size: 14px;
+}
+
+

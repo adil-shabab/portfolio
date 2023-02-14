@@ -26,3 +26,7 @@ items.forEach((item, i) => {
   item.clicked = false
   item.addEventListener('click', () => expand(item, i))
 })
+
+
+
+
