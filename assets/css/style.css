@@ -377,7 +377,7 @@ body{
 
 
 .footer_section .latest_news img{
-    height: 90%;
+    height: 75%;
     object-fit: cover;
 }
 .footer_section .latest_news span{
@@ -387,7 +387,18 @@ body{
 }
 .footer_section .latest_news p{
     color: gray;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 
+
+.footer_section .contact_footer .social_icons{
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+}
+.footer_section .contact_footer .social_icons i{
+    color: #13134b;
+    font-size: 25px;
+    margin-right: 15px;
+}
