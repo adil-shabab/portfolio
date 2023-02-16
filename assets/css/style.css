@@ -298,7 +298,8 @@ body{
     cursor: pointer;
     overflow: hidden;
     position: relative;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    box-shadow: rgba(0, 0, 0, 0.278) 0px 3px 12px;
+    border: 1px solid rgb(206, 206, 206);
   }
 
 
