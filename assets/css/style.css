@@ -178,6 +178,18 @@ body{
     font-size: 22px;
     text-transform: uppercase;
     font-weight: 700;
+    position: relative;
+}
+.about_section .right_section span::after{
+    content: '';
+    background: url('../img/shapes/click.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 75%;
+    margin-left: 13px;
+    height: 75%;
+    position: absolute;
+    margin-top: 6px;
 }
 .about_section .right_section .heading{
     font-size: 35px;
@@ -345,9 +357,23 @@ body{
 
 
 .footer_section{
-    margin-top: 150px;
+    position: relative;
+    /* margin-top: 150px; */
     border-top: 2px solid rgb(220, 220, 220);
     padding: 80px 0px 10px;
+}
+.footer_section::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    background: url('../img/large-map.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .footer_section h5{
     font-family: var(--head-font);
@@ -419,4 +445,317 @@ body{
 
 
 
+
+
+
+
+/* --------------------------------- contact section css start ---------------------------------- */
+.contact-section{
+    min-height: 92vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.contact-section .left-box{
+    padding: 10px 50px;
+    position: relative;
+}
+.contact-section .dots{
+    position: absolute;
+    top: 20px;
+    opacity: 0.3;
+    left: -15px;
+}
+.contact-section .left-box .star{
+    position: absolute;
+    right: 40px;
+    opacity: 0.4;
+    bottom: -50px;
+}
+.contact-section .left-box span{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.contact-section .left-box h1{
+    font-size: 80px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-family: var(--head-font);
+}
+.contact-section .left-box input{
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom: 1px solid rgb(143, 143, 143);
+    margin-bottom: 28px;
+    padding: 8px;
+    padding-top: 5px;
+}
+.contact-section .right-box{
+    background: rgba(223, 223, 223, 0.623);
+    padding: 35px 60px;
+    box-shadow: var(--sm-shadow);
+    position: relative;
+}
+.contact-section .left-box .key{
+    position: absolute;
+    right: 15px;
+    opacity: 0.6;
+    top: 35px;
+}
+.contact-section .right-box h5{
+    font-synthesis: 25px;
+    font-family: var(--head-font);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.contact-section .right-box p{
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+.contact-section .right-box a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    width: fit-content;
+    margin-bottom: 8px;
+}
+.contact-section .right-box a::after{
+    content: '';
+    background: url('../img/frontend/right-top.png');
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    right: -20px;
+    top: 2px;
+}
+.contact-section .right-box .map{
+    font-weight: bold;
+}
+@media screen and (max-width: 992px) {
+    .contact-section .left-box{
+        margin-top: 45px;
+        padding: 20px;
+    }
+    .contact-section .left-box .star{
+        top: 130px;
+        right: 0px;
+    }
+    .contact-section .left-box .btn-div{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .contact-section .right-box{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .contact-section .left-box h1{
+        font-size: 55px;
+    }
+    .contact-section .left-box{
+        padding: 10px;
+    }
+    .contact-section .right-box{
+        padding: 25px;
+    }
+}
+
+
+
+
+
   
+
+.quote_section{
+    position: relative;
+    margin-top: 80px;
+    padding: 80px 0px;
+    background: #cfcece30;
+}
+.quote_section h3{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 35px;
+    font-family: var(--head-font);
+}
+.quote_section span{
+    position: relative;
+    text-align: center;
+    display: block;
+    margin-top: 26px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.quote_section img.right_img{
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+}
+.quote_section img.left_img{
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    transform: rotate(180deg);
+}
+
+
+
+
+
+.about_content{
+    padding: 50px 0px;
+    margin-bottom: 80px;
+    margin-top: 10px;
+}
+.about_content .right_section span{
+    font-size: 29px;
+    text-transform: uppercase;
+    font-family: var(--head-font);
+    font-weight: bold;
+}
+.about_content .right_section p{
+    font-size: 17px;
+    color: #4b4b4b;
+}
+.about_content .right_section button{
+    margin-top: 20px;
+}
+
+
+.about_banner{
+    padding: 69px 0px;
+    position: relative;
+}
+.about_banner .heading__text{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-family: var(--head-font);
+    font-size: 40px;
+    margin-top: 30px;
+    line-height: 51px;
+}
+.about_banner img{
+    width: 60px;
+    position: absolute;
+    left: 16%;
+    top: 18%;
+}
+.about_banner p{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-pg-quality-section{
+    padding: 100px 10px;
+    background-color: #d7d9e747;
+}
+
+.about-pg-quality-section .quality-point{
+    padding: 60px 10px;
+    border-top: 1px solid #4e4b4b;
+    border-bottom: 1px solid #4e4b4b;
+}
+
+.about-pg-quality-section .quality-point .sm-head{
+    font-family: var(--body-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000;
+}
+
+.about-pg-quality-section .quality-point .bg-head{
+    font-family: var(--head-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 59px;
+    color: #f4f4f8;
+    font-weight: 800;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
+
+.about-pg-quality-section .quality-point .bg-head:hover{
+    color: #18185a;
+    text-shadow: none;
+}
+
+
+.menu__item-text {
+    line-height: 100px;
+    display: inline-flex;
+    height: 100px;
+    color: rgba(255, 255, 255, 0.3);
+    position: relative;
+    z-index: 1;
+  }
+  .menu__item-text:hover {
+    color: white;
+    position: relative;
+    z-index: 3;
+  }
+  .menu__item-image {
+    height: 400px;
+    width: 340px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    margin-top: -150px;
+    transform: scale(0.4);
+  }
+
+
+  .menu__item-image img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+  }
+  .menu__item-image.living, .menu__item-image.creative {
+    background-image: url("../img/about-pg/creative.jpg");
+  }
+  .menu__item-image.qualified-emp {
+    background-image: url("../img/about-pg/qualified-employees.jpg");
+  }
+  .menu__item-image.technology {
+    background-image: url("../img/about-pg/technology-1.jpg");
+  }
+  .menu__item-image.support {
+    background-image: url("../img/about-pg/suppot.jpg");
+  }
+
