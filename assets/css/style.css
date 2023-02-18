@@ -625,6 +625,11 @@ body{
 .about_content .right_section button{
     margin-top: 20px;
 }
+.about_content .right_section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
 
 .about_banner{
@@ -647,6 +652,36 @@ body{
     top: 18%;
 }
 .about_banner p{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+
+
+
+.project__banner{
+    padding: 69px 0px;
+    position: relative;
+}
+.project__banner .heading__text{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-family: var(--head-font);
+    font-size: 40px;
+    margin-top: 30px;
+    line-height: 51px;
+}
+.project__banner img{
+    width: 60px;
+    position: absolute;
+    left: 16%;
+    top: 18%;
+}
+.project__banner p{
     width: 70%;
     margin: auto;
     text-align: center;
@@ -759,3 +794,64 @@ body{
     background-image: url("../img/about-pg/suppot.jpg");
   }
 
+
+
+
+
+
+  .project__section{
+    margin-bottom: 120px;
+    margin-top: 40px;
+  }
+  .project__section .img_box{
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 25px;
+    overflow: hidden;
+  }
+  .project__section .img_box .txt_section{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s;
+    left: 5%;
+    background: white;
+    padding: 10px 15px;
+    bottom: -100%;
+  }
+  .project__section .img_box:hover .txt_section{
+    bottom: 5%;
+  }
+  .project__section .img_box .txt_section h4{
+    font-size: 28px;
+    font-weight: 500;
+    font-family: var(--head-font);
+  }
+  .project__section .img_box .txt_section p{
+    font-size: 16px;
+    color: rgb(35, 35, 35);
+  }
+  .project__section .img_box .txt_section .icons{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+  }
+  .project__section .img_box .txt_section .icons button{
+    border: none;
+    outline: none;
+    padding: 10px 19px;
+    font-size: 17px;
+    font-family: var(--head-font);
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+    align-items: center;
+  }
+  .project__section .img_box .txt_section .icons button i{
+    margin-right: 15px;
+    font-size: 19px;
+    margin-top: 1px;
+  }
