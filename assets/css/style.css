@@ -676,7 +676,7 @@ body{
     }
     .quote_section h3{
         width: 100%;
-        font-size: 30px;
+        font-size: 26px;
         margin-top: 20px;
     }
 }
@@ -736,6 +736,20 @@ body{
     margin-top: 20px;
     font-size: 16px;
 }
+@media screen and (max-width: 992px) {
+    .about_banner p{
+        width: 100%;
+    }
+    .about_banner .heading__text{
+        width: 100%;
+        line-height: 35px;
+        font-size: 30px;
+    }
+    .about_banner img{
+        left: 7%;
+        top: 10%;
+    }
+}
 
 
 
@@ -767,6 +781,20 @@ body{
     font-size: 16px;
 }
 
+@media screen and (max-width: 992px) {
+    .project__banner p{
+        width: 100%;
+    }
+    .project__banner .heading__text{
+        width: 100%;
+        line-height: 35px;
+        font-size: 30px;
+    }
+    .project__banner img{
+        left: 7%;
+        top: 10%;
+    }
+}
 
 
 
@@ -933,3 +961,23 @@ body{
     font-size: 19px;
     margin-top: 1px;
   }
+  @media screen and (max-width: 992px) {
+    
+      .project__section .img_box .txt_section{
+            width: 100%;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            padding: 0px;
+            position: relative;
+            bottom: unset;
+            height: 100%;
+            left: unset;
+            justify-content: flex-start;
+        }
+        .project__section .img_box:hover .txt_section{
+            bottom: unset;
+        }
+        .project__section .img_box .txt_section .icons button i{
+            margin-right: 8px;
+          }
+    }
