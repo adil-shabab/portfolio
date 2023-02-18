@@ -9,7 +9,10 @@
 }
 
 
-
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 *{
     margin: 0;
     padding: 0;
@@ -46,6 +49,13 @@ body{
     background: white;
     transition: 0.3s linear;
     z-index: -1;
+}
+.button-full.cv{
+    width: 200px;
+}
+.button-full.cv img{
+    width: 22px;
+    margin-left: 10px;
 }
 .button-full:hover::before{
     width: 100%;
@@ -155,7 +165,19 @@ body{
 .hero_section .right_section .lottie{
     width: 80%;
 }
-
+@media screen and (max-width: 992px) {
+    .hero_section{
+        overflow: hidden;
+    }
+    .hero_section .left_section h1.heading{
+        font-size: 50px;
+    }
+    .hero_section .left_section p.description{
+        font-size: 16px;
+        width: 100%;
+        margin-top: 15px;
+    }
+}
 
 
 
@@ -266,6 +288,14 @@ body{
     margin-left: 12px;
 }
 
+@media screen and (max-width: 992px) {
+    .service_section .head_para{
+        width: 100%;
+    }
+    .service_section .head_txt{
+        font-size: 35px;
+    }
+}
 
 
 
@@ -313,7 +343,14 @@ body{
     box-shadow: rgba(0, 0, 0, 0.278) 0px 3px 12px;
     border: 1px solid rgb(206, 206, 206);
   }
-
+@media screen and (max-width: 992px) {
+    .elastic__section .head_txt{
+        font-size: 35px;
+    }
+    .elastic__section .head_para{
+        width: 100%;
+    }
+}
 
 
 
@@ -351,6 +388,14 @@ body{
     align-items: center;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 10px;
+}
+@media screen and (max-width: 992px) {
+    .skills_section .head_txt{
+        font-size: 35px;
+    }
+    .skills_section .head_para{
+        width: 100%;
+    }
 }
 
 
@@ -438,7 +483,26 @@ body{
     padding: 18px 0px 0px 0px;
     border-top: 1px solid gray;
 }
-
+@media screen and (max-width: 992px) {
+    .footer_section .quick_link{
+        padding: 0px 0px 0px 13px;
+    }
+    .footer_section .logo_section h2{
+        margin-bottom: 15px;
+    }
+    .footer_section .logo_section{
+        margin-bottom: 30px;
+    }
+    .footer_section .contact_footer{
+        margin-bottom: 30px;
+    }
+    .footer_section .latest_news{
+        margin-bottom: 30px;
+    }
+    .footer_section .quick_link{
+        margin-bottom: 30px;
+    }
+}
 
 
 
@@ -601,6 +665,20 @@ body{
     left: 10%;
     top: 15%;
     transform: rotate(180deg);
+}
+@media screen and (max-width: 992px) {
+    .quote_section img.left_img{
+        left: 7%;
+        top: 5%;
+    }
+    .quote_section img.right_img{
+        right: 7%;
+    }
+    .quote_section h3{
+        width: 100%;
+        font-size: 30px;
+        margin-top: 20px;
+    }
 }
 
 
