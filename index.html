@@ -27,22 +27,66 @@
     <nav class="sm-shadow navbar navbar-expand-lg navbar-light">
         <div class="container">
           <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button style="border: none;outline:none;" class="d-md-none d-block btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <img src="assets/img/shapes/menu.png" class="img-fluid" alt="">
           </button>
+
+          <!-- offcanvas -->
+          <div class="d-md-none d-block offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header" style="margin-top: 15px;padding: 25px;">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Logo</h5>
+              <button style="border:none;outline:none;" type="button" class="bg-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="assets/img/shapes/close.png" alt="">
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item me-3">
+                  <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                </li>
+              </ul>
+              <div class="d-flex social_icons">
+                <a href="">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+
+          
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                <a class="nav-link" aria-current="page" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+                <a class="nav-link" aria-current="page" href="projects.html">Projects</a>
               </li>
               <li class="nav-item me-3">
-                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
               </li>
               <button class="button-full cv">Download CV <img src="assets/img/shapes/download.png" alt="" class="img-fluid"></button>
             </ul>
@@ -56,7 +100,7 @@
     <div class="hero_section">
       <div class="container">
         <div class="row">
-          <div class="order-md-1 order-2 col-md-6 left_section">
+          <div class="order-md-0 order-1 col-md-6 left_section">
             <span class="span">Hy I am 👋</span>
             <h1 class="heading">Adil Shabab</h1>
             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, aut dolore eum porro ab corrupti exercitationem voluptas explicabo delectus nisi! Autem, officiis voluptatum.</p>
@@ -141,7 +185,7 @@
           <div class="item" style="background-image: url(assets/img/website/alkufoof.png)"></div>
           <div class="item" style="background-image: url(assets/img/website/netflix.png)"></div>
         </div>
-        <div class="row">
+        <div class="row d-md-none">
           <div class="col-12 mb-3">
             <a href=""><img src="assets/img/website/mockup/knk.png" class="img-fluid" alt=""></a>
           </div>
@@ -155,7 +199,7 @@
             <a href=""><img src="assets/img/website/mockup/buyend.jpg" class="img-fluid" alt=""></a>
           </div>
         </div>
-        <button class="button-full mt-3 d-block m-auto" style="width: 220px; padding: 14px 25px;">View All Projects</button>
+        <a style="text-decoration: none;" href="projects.html"><button class="button-full mt-3 d-block m-auto" style="width: 220px; padding: 14px 25px;">View All Projects</button></a>
       </div>
     </div>
 
@@ -171,57 +215,57 @@
         <div class="row">
           <div class="col-lg-2 col-md-3 col-4 mt-4">
             <div class="box">
-              <img src="assets/img/icons/html.png" class="img-fluid w-md-50 w-100" alt="">
+              <img src="assets/img/icons/html.png" class="img-fluid" alt="">
             </div>
           </div>
           <div class="col-lg-2 col-md-3 col-4 mt-4">
             <div class="box">
-              <img src="assets/img/icons/css-3.png" class="img-fluid w-md-50 w-100" alt="">
+              <img src="assets/img/icons/css-3.png" class="img-fluid" alt="">
             </div>
           </div>
           <div class="col-lg-2 col-md-3 col-4 mt-4">
             <div class="box">
-              <img src="assets/img/icons/js.png" class="img-fluid w-md-50 w-100" alt="">
+              <img src="assets/img/icons/js.png" class="img-fluid" alt="">
             </div> 
           </div>
           <div class="col-lg-2 col-md-3 col-4 mt-4">
             <div class="box">
-              <img src="assets/img/icons/bootstrap.png" class="img-fluid w-md-50 w-100" alt="">
+              <img src="assets/img/icons/bootstrap.png" class="img-fluid" alt="">
             </div> 
           </div>
           <div class="col-lg-2 col-md-3 col-4 mt-4">
             <div class="box">
-              <img src="assets/img/icons/react.png" class="img-fluid w-md-50 w-100" alt="">
+              <img src="assets/img/icons/react.png" class="img-fluid" alt="">
             </div> 
           </div>
           <div class="col-lg-2 col-md-3 col-4 mt-4">
             <div class="box">
-              <img src="assets/img/icons/python.png" class="img-fluid w-md-50 w-100" alt="">
+              <img src="assets/img/icons/python.png" class="img-fluid" alt="">
             </div> 
           </div>
           <div class="col-lg-2 col-md-3 col-4 mt-4">
             <div class="box">
-              <img src="assets/img/icons/django.png" class="img-fluid w-md-50 w-100" alt="">
+              <img src="assets/img/icons/django.png" class="img-fluid" alt="">
             </div> 
           </div>
           <div class="col-lg-2 col-md-3 col-4 mt-4">
             <div class="box">
-              <img src="assets/img/icons/mysql.png" class="img-fluid w-md-50 w-100" alt="">
+              <img src="assets/img/icons/mysql.png" class="img-fluid" alt="">
             </div> 
           </div>
           <div class="col-lg-2 col-md-3 col-4 mt-4">
             <div class="box">
-              <img src="assets/img/icons/postgres.png" class="img-fluid w-md-50 w-100" alt="">
+              <img src="assets/img/icons/postgres.png" class="img-fluid" alt="">
             </div> 
           </div>
           <div class="col-lg-2 col-md-3 col-4 mt-4">
             <div class="box">
-              <img src="assets/img/icons/vscode.png" class="img-fluid w-md-50 w-100" alt="">
+              <img src="assets/img/icons/vscode.png" class="img-fluid" alt="">
             </div> 
           </div>
           <div class="col-lg-2 col-md-3 col-4 mt-4">
             <div class="box">
-              <img src="assets/img/icons/github.png" class="img-fluid w-md-50 w-100" alt="">
+              <img src="assets/img/icons/github.png" class="img-fluid" alt="">
             </div> 
           </div>
         </div>

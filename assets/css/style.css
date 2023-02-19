@@ -86,6 +86,10 @@ body{
 }
 .navbar .navbar-nav .nav-item a{
     font-size: 17px;
+    color: #858585d1;
+}
+.navbar .navbar-nav .nav-link.active{
+    color: #13134b;
 }
 
 
@@ -257,6 +261,10 @@ body{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     padding: 15px 30px;
     border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .service_section .box .animie{
     width: 350px;
@@ -381,6 +389,9 @@ body{
     margin: 0px auto 35px;
     margin-bottom: 35px;
 }
+.skills_section .box img{
+    width: 50%;
+}
 .skills_section .box{
     padding: 30px;
     display: flex;
@@ -394,6 +405,9 @@ body{
         font-size: 35px;
     }
     .skills_section .head_para{
+        width: 100%;
+    }
+    .skills_section .box img{
         width: 100%;
     }
 }
@@ -980,4 +994,34 @@ body{
         .project__section .img_box .txt_section .icons button i{
             margin-right: 8px;
           }
+    }
+
+
+
+
+    .offcanvas{
+        font-family: var(--body-font);
+        width: 80%;
+    }
+    .offcanvas .nav-link{
+        color: rgb(43, 43, 43);
+    }
+    .offcanvas .nav-link.active{
+        color: #13134b;
+    }
+    .offcanvas .social_icons{
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 64%;
+        left: 50%;
+        transform: translate(-50%, 0px);
+    }
+    .offcanvas .social_icons a{
+        text-decoration: none;
+        color: #13134b;
+        margin-right: 18px;
+    }
+    .offcanvas .social_icons a i{
+        font-size: 24px;
     }

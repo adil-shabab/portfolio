@@ -27,22 +27,63 @@
     <nav class="sm-shadow navbar navbar-expand-lg navbar-light">
         <div class="container">
           <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button style="border: none;outline:none;" class="d-md-none d-block btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <img src="assets/img/shapes/menu.png" class="img-fluid" alt="">
           </button>
+
+          <!-- offcanvas -->
+          <div class="d-md-none d-block offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header" style="margin-top: 15px;padding: 25px;">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Logo</h5>
+              <button style="border:none;outline:none;" type="button" class="bg-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="assets/img/shapes/close.png" alt="">
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item me-3">
+                  <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                </li>
+              </ul>
+              <div class="d-flex social_icons">
+                <a href="">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                <a class="nav-link" aria-current="page" href="about.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
               </li>
               <li class="nav-item me-3">
-                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
               </li>
               <button class="ms-3 button-full cv">Download CV <img src="assets/img/shapes/download.png" alt="" class="img-fluid"></button>
             </ul>
