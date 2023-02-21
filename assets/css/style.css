@@ -929,6 +929,9 @@ body{
     margin-bottom: 25px;
     overflow: hidden;
   }
+  .project__section .img_box .txt_section a{
+    text-decoration: none;
+  }
   .project__section .img_box .txt_section{
     position: absolute;
     width: 90%;
